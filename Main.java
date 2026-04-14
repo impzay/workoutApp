@@ -14,10 +14,13 @@ public class Main {
         int age = scan.nextInt();
 
         System.out.println("Please enter your weight in lbs: ");
-        int weight = scan.nextInt();
+        double weight = scan.nextInt();
 
         System.out.println("Please enter your height in inches: ");
         int height = scan.nextInt();
+
+        BMI body = new BMI(weight,height);
+
         User user = new User(name, email, 1, age, weight, height);
         Workout workout1 = new Workout(1, 500, 60, "Sprints", "2026, 10, 1");
         

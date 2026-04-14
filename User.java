@@ -2,11 +2,11 @@ public class User{
     String name;
     String email;
     int id;
-    int weight;
+    double weight;
     int height;
     int age;
 
-    public User(String name, String email, int id, int age, int weight, int height){
+    public User(String name, String email, int id, int age, double weight, int height){
         this.name = name;
         this.email = email;
         this.id = id;
