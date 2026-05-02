@@ -2,28 +2,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in); 
-            
-        System.out.println("Please enter your username: ");
-        String name = scan.nextLine();
 
-        System.out.println("Please enter your email: ");
-        String email = scan.nextLine();
+        Scanner scan = new Scanner(System.in);
 
-        System.out.println("Please enter your age: ");
-        int age = scan.nextInt();
+        System.out.println("What type of workout will you be doing today?");
+        System.out.println("HITT");
+        System.out.println("Cross Fit");
+        System.out.println("Body Building");
+        System.out.println("Power Lifting");
+        System.out.println("Power Building");
+        System.out.println("Athletic Training");
 
-        System.out.println("Please enter your weight in lbs: ");
-        double weight = scan.nextInt();
+        String userChoice = scan.nextLine().toLowerCase();
+        Workout(userChoice);
 
-        System.out.println("Please enter your height in inches: ");
-        int height = scan.nextInt();
+       }
 
-        BMI body = new BMI(weight,height);
+       public static void Workout(String w){
 
-        User user = new User(name, email, 1, age, weight, height);
-        Workout workout1 = new Workout(1, 500, 60, "Sprints", "2026, 10, 1");
-        
-        System.out.println("Total calories burned: " + workout1.getCalories());
+
+
        }
 }

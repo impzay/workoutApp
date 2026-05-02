@@ -1,17 +1,12 @@
-public class BMI {
+public class BMI extends UserTraits{
 
-    private double weight;
-    private double height;
-
-    public BMI(double w, double h){
-        this.weight = w;
-        this.height = h;
+    public BMI(double height, double weight, int age){
+        super(height,weight,age);
     }
-
 
     public void calculateBMI(){
         height = Math.sqrt(height);
-        double bmi = (weight * 703) / height;
+        double bmi = (weight * 703) / (height * height);
         System.out.println("Your body mass index is: " + bmi);
     }
 

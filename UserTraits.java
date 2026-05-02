@@ -1,15 +1,13 @@
 public class UserTraits {
-    int totalCalories;
-    int totalWorkouts;
-    double avgDuration;
 
-    public UserTraits(int totalCalories, int totalWorkouts, double avgDuration){
-        this.totalCalories = totalCalories;
-        this.totalWorkouts = totalWorkouts;
-        this.avgDuration = avgDuration;
+    double height;
+    double weight;
+    double age;
+
+    public UserTraits(double h, double w, int a){
+        this.height = h;
+        this.weight = w;
+        this.age = a;
     }
 
-    public int getTotalCalories(){
-        return this.totalCalories;
-    }
 }

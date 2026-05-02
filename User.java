@@ -1,17 +1,13 @@
 public class User{
+
     String name;
     String email;
-    int id;
-    double weight;
-    int height;
-    int age;
+    String phoneNumber;
 
-    public User(String name, String email, int id, int age, double weight, int height){
+    public User(String name, String email, String phoneNumber){
         this.name = name;
         this.email = email;
-        this.id = id;
-        this.age = age;
-        this.weight = weight;
-        this.height = height; 
+        this.phoneNumber = phoneNumber;
     }
+
 }
